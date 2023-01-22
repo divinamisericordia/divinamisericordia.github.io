@@ -1,0 +1,32 @@
+.titlewrapper > h1 {
+	font-size: 3vw;
+}
+
+span.title {
+	color: burlywood;
+	font-style: italic;
+	font-family: cursive;
+	font-size: 2.5vw;
+}
+
+.background-fixed {
+	position: fixed;
+	width: 100%;
+	height: -webkit-fill-available;
+	background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhhD9x1ujidMhBXfoGp4l-Gc0Ug7mnVw3wD1OGVCnoM3_CtoEEtdpYsM7zQNoYF725t8GuN6f-auYnY1QHYvvZjDAv5WhueT9Axa197W_2dYzOOts1x1mALfrLvU3godiex31ITIFK8l5p_WydEojK2Kus9ODn3HxoDdhIQU-i5yLIvgUkeKwNzCgOi=s1600);
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 0.5;
+}
+
+.column-right-outer {
+	background: #ff030338;
+}
+
+.copyright-link {
+	display: flex;
+}
+
+.copyright-link > p {
+	margin: auto;
+}
