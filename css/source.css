@@ -1,0 +1,359 @@
+/* Content
+----------------------------------------------- */
+body {
+	font: $(body.font);
+	color: $(body.text.color);
+	/*background: $(body.background);*/
+	background: #000;
+}
+
+html body .region-inner {
+	min-width: 0;
+	max-width: 100%;
+	width: auto;
+}
+
+a:link {
+	text-decoration:none;
+	color: $(link.color);
+}
+
+a:visited {
+  text-decoration:none;
+  color: $(link.visited.color);
+}
+
+a:hover {
+  text-decoration:underline;
+  color: $(link.hover.color);
+}
+
+.content-outer .content-cap-top {
+  height: $(content.imageBorder.top.space);
+  background: transparent $(content.imageBorder.top) repeat-x scroll top center;
+}
+
+.content-outer {
+  margin: 0 auto;
+  padding-top: $(content.margin);
+}
+
+.content-inner {
+	/*background: $(content.background);*/
+	/*background-position: left -$(content.imageBorder.top.space);*/
+	/*background-color: $(content.background.color);*/
+	padding: $(content.padding);
+}
+
+.main-inner .date-outer {
+  margin-bottom: 2em;
+}
+
+/* Header
+----------------------------------------------- */
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Header h1 {
+  font: $(header.font);
+  color: $(header.text.color);
+}
+
+.Header h1 a {
+  color: $(header.text.color);
+}
+
+.Header .description {
+  font-size: 130%;
+}
+
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+.tabs-inner .section {
+  margin: 0;
+}
+
+.tabs-inner .widget ul {
+  padding: 0;
+  background: $(tabs.background.color) $(tabs.background.gradient) repeat scroll top center;
+}
+
+.tabs-inner .widget li {
+  border: none;
+}
+
+.tabs-inner .widget li a {
+  display: inline-block;
+  padding: 1em 1.5em;
+  color: $(tabs.text.color);
+  font: $(tabs.font);
+}
+
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+  position: relative;
+  z-index: 1;
+  background: $(tabs.selected.background.color) $(tabs.selected.background.gradient) repeat scroll top center;
+  color: $(tabs.selected.text.color);
+
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+  font: $(widget.title.font);
+  color: $(widget.title.text.color);
+}
+
+.main-inner h2.date-header {
+  font: $(date.font);
+  color: $(date.text.color);
+}
+
+.footer-inner .widget h2,
+.sidebar .widget h2 {
+  padding-bottom: .5em;
+}
+
+/* Main
+----------------------------------------------- */
+
+.main-inner {
+  padding: $(content.padding) 0;
+}
+
+.main-inner .column-center-inner {
+  padding: $(content.posts.padding) 0;
+}
+
+.main-inner .column-center-inner .section {
+  margin: 0 $(content.posts.padding);
+}
+
+.main-inner .column-right-inner {
+  margin-left: $(content.padding);
+}
+
+.main-inner .fauxcolumn-right-outer .fauxcolumn-inner {
+  margin-left: $(content.padding);
+  background: $(widget.outer.background.color) $(widget.outer.background.gradient) repeat scroll top left;
+}
+
+.main-inner .column-left-inner {
+  margin-right: $(content.padding);
+}
+
+.main-inner .fauxcolumn-left-outer .fauxcolumn-inner {
+  margin-right: $(content.padding);
+  background: $(widget.outer.background.color) $(widget.outer.background.gradient) repeat scroll top left;
+}
+
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+  padding: 15px 0;
+}
+
+/* Posts
+----------------------------------------------- */
+h3.post-title {
+  margin-top: 20px;
+}
+
+h3.post-title a {
+  font: $(post.title.font);
+  color: $(post.title.text.color);
+}
+
+h3.post-title a:hover {
+  text-decoration: underline;
+}
+
+.main-inner .column-center-outer {
+  background: $(post.background.color) $(post.background.url) repeat scroll top left;
+  _background-image: none;
+}
+
+.post-body {
+  line-height: 1.4;
+  position: relative;
+}
+
+.post-header {
+  margin: 0 0 1em;
+
+  line-height: 1.6;
+}
+
+.post-footer {
+  margin: .5em 0;
+  line-height: 1.6;
+}
+
+#blog-pager {
+  font-size: 140%;
+}
+
+#comments {
+  background: $(comments.background);
+  padding: 15px;
+}
+
+#comments .comment-author {
+  padding-top: 1.5em;
+}
+
+#comments h4,
+#comments .comment-author a,
+#comments .comment-timestamp a {
+  color: $(post.title.text.color);
+}
+
+#comments .comment-author:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.avatar-image-container {
+  margin: .2em 0 0;
+}
+
+/* Comments
+----------------------------------------------- */
+#comments a {
+  color: $(post.title.text.color);
+}
+
+.comments .comments-content .icon.blog-author {
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+
+.comments .comments-content .loadmore a {
+  border-top: 1px solid $(post.title.text.color);
+  border-bottom: 1px solid $(post.title.text.color);
+}
+
+.comments .comment-thread.inline-thread {
+  background: $(post.background.color);
+}
+
+.comments .continue {
+  border-top: 2px solid $(post.title.text.color);
+}
+
+
+/* Widgets
+----------------------------------------------- */
+.sidebar .widget {
+  border-bottom: 2px solid $(widget.border.bevel.color);
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+
+.sidebar .widget:first-child {
+  margin-top: 0;
+}
+
+.sidebar .widget:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer-inner .widget,
+.sidebar .widget {
+  font: $(widget.font);
+  color: $(widget.text.color);
+}
+
+
+.sidebar .widget a:link {
+  color: $(widget.link.color);
+  text-decoration: none;
+}
+
+.sidebar .widget a:visited {
+  color: $(widget.link.visited.color);
+}
+
+.sidebar .widget a:hover {
+  color: $(widget.link.color);
+  text-decoration: underline;
+}
+
+.footer-inner .widget a:link {
+  color: $(link.color);
+  text-decoration: none;
+}
+
+.footer-inner .widget a:visited {
+  color: $(link.visited.color);
+}
+
+.footer-inner .widget a:hover {
+  color: $(link.color);
+  text-decoration: underline;
+}
+
+.widget .zippy {
+  color: $(widget.alternate.text.color);
+}
+
+.footer-inner {
+  background: transparent $(footer.background.gradient) repeat scroll top center;
+}
+
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+  background-size: 100% auto;
+}
+
+body.mobile .AdSense {
+  margin: 0 -10px;
+}
+
+.mobile .body-fauxcolumn-outer {
+  background: $(mobile.background.overlay);
+}
+
+.mobile .footer-inner .widget a:link {
+  color: $(widget.link.color);
+  text-decoration: none;
+}
+
+.mobile .footer-inner .widget a:visited {
+  color: $(widget.link.visited.color);
+}
+
+.mobile-post-outer a {
+  color: $(post.title.text.color);
+}
+
+.mobile-link-button {
+  background-color: $(link.color);
+}
+
+.mobile-link-button a:link, .mobile-link-button a:visited {
+  color: $(mobile.button.color);
+}
+
+.mobile-index-contents {
+  color: $(body.text.color);
+}
+
+.mobile .tabs-inner .PageList .widget-content {
+  background: $(tabs.selected.background.color) $(tabs.selected.background.gradient) repeat scroll top center;
+  color: $(tabs.selected.text.color);
+}
+
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+  border-$startSide: 1px solid $(tabs.selected.text.color);
+}
