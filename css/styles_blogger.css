@@ -1,4 +1,36 @@
 
+/*** TEXT SHOW ***/
+
+.text-align-1 {
+	text-align: left;
+}
+
+.text-align-2 {
+	text-align: center;
+}
+
+.text-align-3 {
+	text-align: right;
+}
+
+/*** FONT STYLES ***/
+
+.txt-size-large {
+	font-size: large;
+}
+
+.txt-size-larger {
+	font-size: larger;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
 .text-red {
 	color: red;
 }
