@@ -1,4 +1,11 @@
 
+
+/***CLEAR FORMAT***/
+
+h2 {
+	font: unset;
+}
+
 /*** FONTS ***/
 
 .font-arial {
